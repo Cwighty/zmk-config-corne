@@ -19,6 +19,18 @@
             key-positions = <19 20>;
             bindings = <&kp ESC>;
         };
+        
+        minus_combo {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp MINUS>;
+        };
+
+        underscore_combo {
+            timeout-ms = <50>;
+            key-positions = <15 16 41>;
+            bindings = <&kp UNDERSCORE>;
+        };
      };
 
     keymap {
@@ -27,9 +39,9 @@
         default_layer {
             bindings = <
 &kp LGUI   &kp Q  &kp W  &kp E      &kp R                 &kp T        &kp Y        &kp U          &kp I            &kp O    &kp P             &kp DELETE
-&sk LALT   &kp A  &kp S  &kp D      &kp F                 &kp G        &kp H        &kp J          &kp K            &kp L    &kp SINGLE_QUOTE  &sk RIGHT_ALT
+&sk LALT   &kp A  &kp S  &kp D      &kp F                 &kp G        &kp H        &kp J          &kp K            &kp L    &kp SEMICOLON     &sk SINGLE_QUOTE
 &sk LSHFT  &kp Z  &kp X  &kp C      &kp V                 &kp B        &kp N        &kp M          &kp COMMA        &kp DOT  &kp FSLH          &sl 3
-                         &sk LCTRL  &mt LEFT_GUI SPACE    &lt 1 TAB  &lt 2 ENTER  &kp BACKSPACE  &sk RIGHT_SHIFT
+                         &sk LCTRL  &mt SPACE  &lt 1 TAB         &lt 2 ENTER  &kp BACKSPACE  &sk RIGHT_SHIFT
             >;
         };
 
